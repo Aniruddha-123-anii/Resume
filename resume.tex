@@ -1,0 +1,196 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+% -------- UPDATED SUBHEADING --------
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \textbf{#1} \hfill \textit{\small #2} \\
+  \textit{\small #3} \hfill \textit{\small #4}
+  \vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aniruddha Sonawane} \\ \vspace{5pt}
+    \small 
+    +91-9021229612 $|$ Pune, India $|$ 
+    \href{mailto:aniruddhasonawane6666@gmail.com}{aniruddhasonawane6666@gmail.com} $|$ 
+    \href{https://github.com/Aniruddha-123-anii}{GitHub} $|$ 
+    \href{https://in.linkedin.com/in/aniruddha-sonawane-13160b254}{LinkedIn}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+Full Stack Developer with strong expertise in Java 21, Spring Boot, and microservices architecture. 
+Experienced in building secure, scalable REST APIs in fintech and lending domains. 
+Skilled in PostgreSQL optimization, CI/CD workflows, and React-based frontend integration. 
+Recognized for ownership, performance optimization, and production-grade backend design.
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Lentra AI}
+{July 2024 -- Present}
+{Full Stack Developer}
+{Pune, India}
+\resumeItemListStart
+\resumeItem{Developed secure and scalable REST APIs using Spring Boot, improving response time by 30\%.}
+\resumeItem{Designed microservice modules for loan fulfillment, tranche management, and beneficiary workflows.}
+\resumeItem{Optimized PostgreSQL queries and schema design for high-volume financial data processing.}
+\resumeItem{Integrated dynamic React.js UI supporting 10K+ daily users.}
+\resumeItem{Collaborated with QA and DevOps teams for CI/CD deployment and production monitoring.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Blackrock}
+{Nov 2022 -- Feb 2023}
+{Backend Developer Intern}
+{Pune, India}
+\resumeItemListStart
+\resumeItem{Built scalable backend services using Java and Spring Boot for internal financial applications.}
+\resumeItem{Performed SQL performance tuning and optimized relational database queries.}
+\resumeItem{Worked in Git-based CI/CD workflows and collaborated across cross-functional teams.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\vspace{-4pt}
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+
+\textbf{Programming:} Java 21, JavaScript, TypeScript, OOP, DSA  
+&
+\textbf{AI / Data:} Generative AI, LLM Fundamentals, Prompt Engineering, OpenAI API Integration \\
+
+\textbf{Backend:} Spring Boot, Microservices, REST APIs, Event-Driven Architecture, Node.js 
+&
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB \\
+
+\textbf{Frontend:} React.js, HTML5, CSS3, Bootstrap, StencilJS 
+&
+\textbf{DevOps:} Git, GitHub, Bitbucket, Docker, Jenkins, SonarQube, Jacoco \\
+
+\textbf{Architecture:} Apache Kafka, Distributed Systems, Multi-Tenant Systems 
+&
+\textbf{Security:} JWT, RBAC, Secure API Design \\
+
+\end{tabularx}
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{LOS Core (Loan Origination System)}
+{Jul 2024 -- Present}
+{Lentra AI (Onsite)}
+{Full Time}
+\resumeItemListStart
+\resumeItem{Contributed to core Loan Origination workflows supporting financial institutions.}
+\resumeItem{Designed and enhanced REST APIs for loan processing, KYC validation, and external integrations.}
+\resumeItem{Implemented Kafka-based tenant-aware domain event publishing for real-time workflow updates.}
+\resumeItem{Integrated with external systems including LOS, KYC, Vault, and KFS services.}
+\resumeItem{Ensured idempotent processing, robust error handling, and secure multi-tenant request propagation.}
+\resumeItemListEnd
+
+\resumeSubheading
+{FMS (Fulfillment Microservice)}
+{Jul 2024 -- Present}
+{Lentra AI (Onsite)}
+{Full Time}
+\resumeItemListStart
+\resumeItem{Built Spring Boot microservice managing loan disbursement, tranche handling, and beneficiary workflows.}
+\resumeItem{Developed post-disbursement reconciliation logic and event-driven lifecycle management.}
+\resumeItem{Used Kafka for asynchronous communication and implemented reliable retry mechanisms.}
+\resumeItem{Implemented Testcontainers-based integration testing with Docker, Jenkins, SonarQube, and Jacoco in CI/CD pipeline.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Configuration Comparison Utility}
+{Jul 2024 -- Present}
+{Lentra AI (Onsite)}
+{Full Time}
+\resumeItemListStart
+\resumeItem{Developed Spring Boot utility to compare tenant-specific configuration archives across environments.}
+\resumeItem{Extracted and normalized JSON configs and BPMN workflow definitions for structured comparison.}
+\resumeItem{Built HTML diff generator and ZIP-based report exports via REST APIs.}
+\resumeItem{Integrated embedded Node-based BPMN diff engine for workflow-level change visualization.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}
+\item Spot Award – Lentra Luminaries (March 2025) for exceptional ownership and impact.
+\item Best Project Award – Indira College Annual Tech Fest.
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Indira College of Engineering and Management}
+{2023 -- 2025}
+{MCA – Computer Applications (CGPA: 8.36/10)}
+{Pune, India}
+
+\resumeSubheading
+{Ahmednagar College}
+{2020 -- 2023}
+{B.Sc – Computer Science (CGPA: 9.27/10)}
+{Ahmednagar, India}
+
+\resumeSubHeadingListEnd
+
+\end{document}
